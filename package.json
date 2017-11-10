@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/scottoasis/types-react-stripe-elements#readme",
   "devDependencies": {
-    "@types/react": "^16.0.22",
+    "@types/react": "^16.0.22"
+  },
+  "dependencies": {
     "@types/stripe-v3": "^3.0.4"
   }
 }
