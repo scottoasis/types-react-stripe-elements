@@ -36,7 +36,7 @@ export namespace ReactStripeElements {
 		withRef?: boolean;
 	}
 
-	interface InjectedStripeProps {
+	export interface InjectedStripeProps {
 		stripe: StripeProps;
 	}
 
@@ -54,11 +54,11 @@ export namespace ReactStripeElements {
 		onReady?(): void;
 	}
 
-    interface PaymentRequest {
-        canMakePayment: (result: boolean) => void;
-        on: (event: string, callback: (...args: any[]) => void) => void;
-        show: (...args: any[]) => void;
-    }
+	interface PaymentRequest {
+		canMakePayment: (result: boolean) => void;
+		on: (event: string, callback: (...args: any[]) => void) => void;
+		show: (...args: any[]) => void;
+	}
 }
 
 
