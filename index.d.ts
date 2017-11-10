@@ -53,7 +53,14 @@ export namespace ReactStripeElements {
 
 		onReady?(): void;
 	}
+
+    interface PaymentRequest {
+        canMakePayment: (result: boolean) => void;
+        on: (event: string, callback: (...args: any[]) => void) => void;
+        show: (...args: any[]) => void;
+    }
 }
+
 
 export class StripeProvider extends React.Component<ReactStripeElements.StripeProviderProps> {
 }
@@ -78,4 +85,7 @@ export class CardCVCElement extends React.Component<ReactStripeElements.ElementP
 }
 
 export class PostalCodeElement extends React.Component<ReactStripeElements.ElementProps> {
+}
+
+export class PaymentRequestButtonElement extends React.Component<ReactStripeElements.ElementProps & {paymentRequest: ReactStripeElements.PaymentRequest}> {
 }
