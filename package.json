@@ -1,0 +1,29 @@
+{
+  "name": "@types/react-stripe-elements",
+  "version": "1.0.0",
+  "description": "Typescript definition for react-stripe-elements",
+  "main": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottoasis/types-react-stripe-elements.git"
+  },
+  "keywords": [
+    "React",
+    "Stripe Elements",
+    "Stripe",
+    "Typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottoasis/types-react-stripe-elements/issues"
+  },
+  "homepage": "https://github.com/scottoasis/types-react-stripe-elements#readme",
+  "devDependencies": {
+    "@types/react": "^16.0.22",
+    "@types/stripe-v3": "^3.0.4"
+  }
+}
